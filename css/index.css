@@ -15,14 +15,18 @@
     padding: 0 60px;
 }
 
+
+
 /*typography*/
 
 h1, .h1 {
+    margin-bottom: 74px;
     font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
     color: #202336;
+    width: 356px;
 }
 
 h2, .h2 {
@@ -34,6 +38,7 @@ h2, .h2 {
 }
 
 h3, .h3 { 
+    margin-bottom: 71px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -181,6 +186,63 @@ a.view-all:hover::after {
     padding-right: 15px;
 }
 
+/*form*/
+
+form {
+    
+}
+
+
+fieldset{
+    display: flex;
+    margin-bottom: 35px;
+    border: 0;
+}
+
+fieldset .select-wrapper {
+    position: relative;
+    margin-right: 30px;
+}
+
+fieldset .select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    transform:translateY(-50%);
+}
+
+select{
+    width: 220px;
+    padding: 0 30px;
+    border: 1px solid #e6dcd1;
+    border-radius: 6px;
+    outline: none;
+    min-width: 60px;
+    min-height: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    color: #4A4C53;
+
+    -webkit-appearance: none;
+}
+
+form button, form input[type=button], form input[type=submit] {
+    min-width: 180px;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 52px;
+}
+
 /* header */
 
 header{
@@ -236,4 +298,27 @@ nav {
 .buttons li button.active {
     background: transparent;
     color: #FB8F1D;
+}
+
+/*section.form-and-img*/
+
+section.form-and-img {
+    position: fixed;
+    width: 100%;
+    padding: 114px 0;
+}
+
+
+section.form-and-img img{
+    padding: 0 105px;
+}
+
+h2.h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    padding: 2px 32px;
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat;
+    
 }
