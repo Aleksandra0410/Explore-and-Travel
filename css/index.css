@@ -7,6 +7,7 @@
 }
 
 .section-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,7 +190,7 @@ a.view-all:hover::after {
 /*form*/
 
 form {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 
@@ -208,7 +209,7 @@ fieldset .select-wrapper::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 31px;
     width: 10px;
     height: 10px;
     background-image: url(../img/arrow-down.svg);
@@ -220,9 +221,9 @@ fieldset .select-wrapper::after {
 }
 
 select{
-    width: 220px;
-    padding: 0 30px;
-    border: 1px solid #AFB0B91;
+    width: 221px;
+    padding: 0 31px;
+    border: 1px solid #AFB0B9;
     border-radius: 6px;
     outline: none;
     min-width: 60px;
@@ -303,8 +304,7 @@ nav {
 
 /*section.form-and-img*/
 
-section.form-and-img {
-    position: relative;
+.form-and-img {
     padding: 170px 0px 143px;
 }
 
@@ -314,7 +314,7 @@ section.form-and-img {
 }
 
 
-h2, .h3 section.form-and-img{
+.form-and-img h2.h3 {
     position: relative;
     padding-bottom: 23px;
 }
@@ -330,20 +330,21 @@ h2.h3::after{
 
 img.travel-circle-big {
     position: absolute;
-    left: 200px;
-    margin-top: 290px;
+    left: -51px;
+    top: 326px;
 
 }
 
 img.travel-circle {
     position: absolute;
-    left: 900px;
-    margin-top: 600px ;
+    left: 604px;
+    top: 615px;
     width: 20px;
     height: 20px;
 }
 
 img.travel-cross {
     position: absolute;
-    left: 800px;
+    left: 529px;
+    top: 50px;
 }
