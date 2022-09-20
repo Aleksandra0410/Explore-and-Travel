@@ -369,10 +369,6 @@ img.travel-cross {
 
 /*section img and text*/
 
-h2.text-wrapper, .h2.text-wrapper {
-   
-}
-
 .img-and-text {
     padding: 143px 0;
 }
@@ -383,7 +379,9 @@ h2.text-wrapper, .h2.text-wrapper {
 
 .text-wrapper {
     max-width: 435px;
-   
+    margin-top: -5px;
+    margin-right: 71px
+}
 
 .text-wrapper p {
     font-family: var(--second-font);
@@ -393,6 +391,12 @@ h2.text-wrapper, .h2.text-wrapper {
     margin-top: 20px;
 }
 
+.img-and-text.reverse .text-wrapper  {
+    max-width: 435px;
+    margin-left: 52px;
+    margin-top: 3px;
+}
+
 .text-wrapper .button {
     margin-top: 39px;
 }
@@ -400,18 +404,19 @@ h2.text-wrapper, .h2.text-wrapper {
 .img-and-text img {
     position: relative;
     right: 46px;
-    top: 18px;
+    top: 3px;
     
 }
 
 .img-and-text.reverse img {
     position: relative;
-    left: 200px;
+    top: -28px;
+    left: -38px;
 }
 
 img.section2-circle {
     position: absolute;
-    top: 361px;
+    top: 367px;
     right: 219px;
     width: 20px;
     height: 20px;
@@ -420,12 +425,25 @@ img.section2-circle {
 img.section2-cross {
     position: absolute;
     left: 699px;
-    top: 3px;
+    top: -12px;
 }
 
-img.section3-circle {
+.reverse img.section4-circle {
     position: absolute;
-    right: 100px;
+    left: 155px;
+    top: 55px;
     width: 20px;
     height: 20px;
+}
+
+.reverse img.section4-cross {
+    position: absolute;
+    left: 1300px;
+    top: 8px;
+}
+
+.reverse img.section4-cross2 {
+    position: absolute;
+    left: 531px;
+    top: 395px;
 }
