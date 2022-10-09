@@ -531,3 +531,18 @@ h2.h3::after{
     top: 303px;
     left: -7px;
 }
+
+/*section testimonials*/
+
+.testimonials {
+    padding: 143px 0;
+}
+
+.testimonials .section-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonials-slide {
+    max-width: 100%;
+}
