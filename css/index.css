@@ -546,3 +546,49 @@ h2.h3::after{
 .testimonials-slide {
     max-width: 100%;
 }
+
+/*section locations*/
+
+.locations {
+    padding: 143px 0; 
+}
+
+.locations .section-container {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.locations .title-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 3px;
+ }
+
+ .locations .trending-stories {
+    display: grid;
+    max-width: 1400px;
+    margin-left: 49px;
+    margin-top: 45px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 23px;
+    list-style: none;
+}
+
+.locations .trending-stories img {
+    border-radius: 8px;
+    width: 280px;
+    height: 230px;
+}
+
+.locations .circle-top {
+    position: absolute;
+}
+
+.locations .cross-left {
+    position: absolute;
+}
+
+.locations .cross-down {
+    position: absolute;
+}
