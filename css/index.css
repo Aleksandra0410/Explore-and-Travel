@@ -140,6 +140,12 @@ button, .button, input[type=button], input[type=submit] {
     border: 1px solid #FB8F1D;
 }
 
+button, .slik, input[type=button].slik {
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover {
     background-color: #ff9b31;
     border-color: #ff9b31;
@@ -166,6 +172,7 @@ button.transparent:active, .button.transparent:active, input[type=button].transp
     border-color: #ff9b31;
     color: #e6dcd1;
 }
+
 
 a {
     font-family: 'Inter';
@@ -538,6 +545,10 @@ h2.h3::after{
     padding: 143px 0;
 }
 
+.testimonials-text {
+    
+}
+
 .testimonials .section-container {
     flex-direction: column;
     align-items: flex-start;
@@ -576,9 +587,29 @@ h2.h3::after{
 }
 
 .locations .trending-stories img {
-    border-radius: 8px;
-    width: 280px;
+    border-radius: 8px 8px 0px 0px;
+    width: 260px;
     height: 230px;
+}
+
+.locations figcaption {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px; 
+    max-width: 260px;
+    padding: 13px 0px 23px;
+}
+
+.locations figcaption span {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    padding: 13px 0px;
+}
+
+.locations .trending-stories figure a{
+    position: relative;
+
 }
 
 .locations .circle-top {
