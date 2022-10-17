@@ -140,11 +140,35 @@ button, .button, input[type=button], input[type=submit] {
     border: 1px solid #FB8F1D;
 }
 
-button, .slik, input[type=button].slik {
+button.slick-arrow {
+    position: relative;
     background: transparent;
     border-radius: 50%;
     border: 2px solid #000000;
+    font-size: 0px;
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    height: 40px;
 }
+
+button.slick-arrow:hover {
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+ button.slick-arrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 21px;
+    display: block;
+    width: 6px;
+    height: 100%;
+    background-image: url(../img/arrow-black.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform:translateX(100%);
+ }
 
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover {
     background-color: #ff9b31;
@@ -545,18 +569,21 @@ h2.h3::after{
     padding: 143px 0;
 }
 
-.testimonials-text {
-    
-}
-
 .testimonials .section-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
 }
 
 .testimonials-slide {
     max-width: 100%;
 }
+
+.testimonials-slide img {
+    border-radius: 8px;
+    width: 350px;
+    height: 400px;
+}
+
 
 /*section locations*/
 
@@ -569,7 +596,7 @@ h2.h3::after{
     align-items: stretch;
 }
 
-.locations .title-wrapper2 {
+.locations .title-wrapper {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
@@ -587,24 +614,18 @@ h2.h3::after{
 }
 
 .locations .trending-stories img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 8px 8px 0px 0px;
-    width: 260px;
-    height: 230px;
 }
 
-.locations figcaption {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px; 
-    max-width: 260px;
-    padding: 13px 0px 23px;
+.locations .trending-stories h3.h4 {
 }
 
-.locations figcaption span {
+.locations .trending-stories p {
     font-weight: 700;
     font-size: 19px;
     line-height: 30px;
-    padding: 13px 0px;
 }
 
 .locations .trending-stories figure a{
