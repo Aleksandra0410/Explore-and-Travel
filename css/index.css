@@ -141,7 +141,7 @@ button, .button, input[type=button], input[type=submit] {
 }
 
 button.slick-arrow {
-    position: relative;
+    position: absolute;
     background: transparent;
     border-radius: 50%;
     border: 2px solid #000000;
@@ -150,6 +150,8 @@ button.slick-arrow {
     min-width: 0;
     width: 40px;
     height: 40px;
+    bottom: 0;
+    right: 0;
 }
 
 button.slick-arrow:hover {
@@ -572,6 +574,11 @@ h2.h3::after{
 .testimonials .section-container {
     flex-direction: row;
     align-items: flex-start;
+
+}
+
+.testimonials h2 {
+    padding: 0 0 60px;
 }
 
 .testimonials-slide {
@@ -580,10 +587,18 @@ h2.h3::after{
 
 .testimonials-slide img {
     border-radius: 8px;
-    width: 350px;
-    height: 400px;
+    width: 400px;
+    height: 490px;
 }
 
+.testimonials-slide button.slick-prev {
+    right: 48px;
+}
+
+.testimonials-slide button.slick-prev::after {
+    transform: rotate(180deg);
+    right: 16px;
+}
 
 /*section locations*/
 
@@ -603,29 +618,42 @@ h2.h3::after{
     margin-top: 3px;
  }
 
- .locations .trending-stories {
-    display: grid;
-    max-width: 1400px;
-    margin-left: 49px;
-    margin-top: 45px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 23px;
-    list-style: none;
-}
-
-.locations .trending-stories img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px 8px 0px 0px;
-}
+ .locations .title-wrapper h2 {
+    margin-top: -39px;
+ }
 
 .locations .trending-stories h3.h4 {
+    width: 242px;
+    height: 60px;
+    margin-top: 9px;
+    margin-right: 17px;
+    margin-left: 25px;
+ }
+
+ .locations .trending-stories {
+    display: grid;
+    max-width: 1340px;
+    margin-left: 25px;
+    margin-top: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 49px;
+    list-style: none;
+ }
+
+.locations .trending-stories img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover; 
+    object-position: 0 0;
+  
 }
 
 .locations .trending-stories p {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
 }
 
 .locations .trending-stories figure a{
@@ -633,14 +661,25 @@ h2.h3::after{
 
 }
 
-.locations .circle-top {
+.locations .cross-top {
     position: absolute;
+    margin-top: -92px;
+    left: 515px;
+    transform: rotate(9deg);
 }
 
-.locations .cross-left {
+.locations .circle-left {
     position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 332px;
+    left: 13px;
 }
 
-.locations .cross-down {
+.locations .circle-down {
     position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 571px;
+    left: 850px;
 }
