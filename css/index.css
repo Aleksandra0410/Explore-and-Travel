@@ -583,12 +583,12 @@ h2.h3::after{
 
 .testimonials-slide {
     max-width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .testimonials-slide img {
     border-radius: 8px;
-    width: 400px;
-    height: 490px;
 }
 
 .testimonials-slide button.slick-prev {
@@ -614,36 +614,32 @@ h2.h3::after{
 .locations .title-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: -36px;
     margin-left: 50px;
-    margin-top: 3px;
- }
-
- .locations .title-wrapper h2 {
-    margin-top: -39px;
+    margin-right: auto;
+    margin-bottom: 45px;
+    min-width: 1170px;
  }
 
 .locations .trending-stories h3.h4 {
-    width: 242px;
     height: 60px;
     margin-top: 9px;
-    margin-right: 17px;
-    margin-left: 25px;
+    margin-bottom: 13px;
  }
 
  .locations .trending-stories {
     display: grid;
-    max-width: 1340px;
-    margin-left: 25px;
-    margin-top: 8px;
+    max-width: 1114px;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 49px;
+    grid-column-gap: 24px;
     list-style: none;
+    margin-left: 51px;
  }
 
 .locations .trending-stories img {
     border-radius: 8px 8px 0px 0px;
     width: 100%;
-    height: 230px;
+    height: 232px;
     object-fit: cover; 
     object-position: 0 0;
   
@@ -654,9 +650,10 @@ h2.h3::after{
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
+    margin-bottom: 23px;
 }
 
-.locations .trending-stories figure a{
+.locations .trending-stories a{
     position: relative;
 
 }
