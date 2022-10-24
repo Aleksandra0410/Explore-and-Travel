@@ -568,7 +568,7 @@ h2.h3::after{
 /*section testimonials*/
 
 .testimonials {
-    padding: 143px 0;
+    padding: 53px 0;
 }
 
 .testimonials .section-container {
@@ -600,43 +600,46 @@ h2.h3::after{
     right: 16px;
 }
 
-/*section locations*/
+/*section trending-stories*/
 
-.locations {
-    padding: 143px 0; 
+.trending-stories {
+    padding: 136px 0; 
 }
 
-.locations .section-container {
+.trending-stories .section-container {
     flex-direction: column;
     align-items: stretch;
 }
 
-.locations .title-wrapper {
+.trending-stories .title-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: -36px;
-    margin-left: 50px;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 45px;
-    min-width: 1170px;
+    width: 100%;
  }
 
-.locations .trending-stories h3.h4 {
+ .trending-stories .title-wrapper h2 {
+    margin-left: 50px;
+ }
+
+ .trending-stories .popular-posts h3.h4 {
     height: 60px;
     margin-top: 9px;
     margin-bottom: 13px;
  }
 
- .locations .trending-stories {
+ .trending-stories .popular-posts {
     display: grid;
-    max-width: 1114px;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 24px;
     list-style: none;
     margin-left: 51px;
+    margin-right: 54px;
  }
 
-.locations .trending-stories img {
+ .trending-stories .popular-posts img {
     border-radius: 8px 8px 0px 0px;
     width: 100%;
     height: 232px;
@@ -645,7 +648,7 @@ h2.h3::after{
   
 }
 
-.locations .trending-stories p {
+.trending-stories .popular-posts p {
     font-family: Inter;
     font-weight: 400;
     font-size: 15px;
@@ -653,30 +656,30 @@ h2.h3::after{
     margin-bottom: 23px;
 }
 
-.locations .trending-stories a{
+.trending-stories .popular-posts a{
     position: relative;
 
 }
 
-.locations .cross-top {
+.trending-stories .cross-top {
     position: absolute;
-    margin-top: -92px;
+    top: -55px;
     left: 515px;
     transform: rotate(9deg);
 }
 
-.locations .circle-left {
+.trending-stories .circle-left {
     position: absolute;
     width: 20px;
     height: 20px;
-    margin-top: 332px;
+    top: 368px;
     left: 13px;
 }
 
-.locations .circle-down {
+.trending-stories .circle-down {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 571px;
+    top: 607px;
     left: 850px;
 }
