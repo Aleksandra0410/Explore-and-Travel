@@ -603,7 +603,7 @@ h2.h3::after{
 /*section trending-stories*/
 
 .trending-stories {
-    padding: 136px 0; 
+    padding: 13px 0; 
 }
 
 .trending-stories .section-container {
@@ -618,11 +618,9 @@ h2.h3::after{
     margin-right: auto;
     margin-bottom: 45px;
     width: 100%;
+    max-width: 1119px;
  }
 
- .trending-stories .title-wrapper h2 {
-    margin-left: 50px;
- }
 
  .trending-stories .popular-posts h3.h4 {
     height: 60px;
@@ -656,10 +654,6 @@ h2.h3::after{
     margin-bottom: 23px;
 }
 
-.trending-stories .popular-posts a{
-    position: relative;
-
-}
 
 .trending-stories .cross-top {
     position: absolute;
