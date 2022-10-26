@@ -215,7 +215,7 @@ a:hover {
 
 a.view-all {
     position: relative;
-    padding-right: 65px;
+    right: 15px;
     font-size: 17px;
     line-height: 60px;
 }
@@ -224,7 +224,7 @@ a.view-all::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 55px;
+    right: -9px;
     display: block;
     width: 6px;
     height: 100%;
@@ -358,7 +358,7 @@ nav {
 /*section.form-and-img*/
 
 .form-and-img {
-    padding: 170px 0px 143px;
+    padding: 171px 0px 145px;
     
 }
 
@@ -411,7 +411,7 @@ h2.h3::after{
 /*section img and text*/
 
 .img-and-text {
-    padding: 143px 0;
+    padding: 140px 0;
 }
 
 .img-and-text.reverse .section-container {
@@ -496,7 +496,7 @@ h2.h3::after{
 /*section featured-destination*/
 
 .featured-destination {
-   padding: 143px 0;
+   padding: 149px 0 146px;
 }
 
 .featured-destination .section-container {
@@ -505,10 +505,14 @@ h2.h3::after{
 }
 
 .featured-destination .title-wrapper {
-   display: flex;
-   justify-content: space-between;
-   margin-left: 50px;
-   margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    width: 100%;
+    max-width: 1120px;
+   
 }
 
 .featured-destination .location-list {
@@ -546,7 +550,7 @@ h2.h3::after{
     position: absolute;
     width: 20px;
     height: 20px;
-    top: -27px;
+    top: -29px;
     left: 1039px;
 }
 
@@ -554,21 +558,21 @@ h2.h3::after{
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 485px;
+    top: 483px;
     left: 612px;
 }
 
 .featured-destination .cross-grid {
     position: absolute;
     transform: rotate(8deg);
-    top: 303px;
-    left: -7px;
+    top: 301px;
+    left: -8px;
 }
 
 /*section testimonials*/
 
 .testimonials {
-    padding: 53px 0;
+    padding: 54px 0;
 }
 
 .testimonials .section-container {
@@ -618,7 +622,7 @@ h2.h3::after{
     margin-right: auto;
     margin-bottom: 45px;
     width: 100%;
-    max-width: 1119px;
+    max-width: 1120px;
  }
 
 
