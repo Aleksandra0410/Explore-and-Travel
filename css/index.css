@@ -576,22 +576,32 @@ h2.h3::after{
 
 .testimonials .section-container {
     flex-direction: row;
-    align-items: flex-start;
-
+    align-items: stretch;
 }
 
-.testimonials h2 {
-    padding: 0 0 60px;
-}
-
-.testimonials-slide {
-    max-width: 100%;
+.testimonials .title-wrapper{
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1120px;
+}
+
+.testimonials .testimonials-slide {
+    margin-top: 145px;
+    width: 100%;
+    
+}
+
+.testimonials .testimonials-slide li {
+    display: inline-block;
+    margin-bottom: 30px;
+    list-style: none;
 }
 
 .testimonials-slide img {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .testimonials-slide button.slick-prev {
