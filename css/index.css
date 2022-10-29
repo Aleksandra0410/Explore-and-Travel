@@ -115,6 +115,7 @@ color: rgba(0, 0, 0, 0.85);
 }
 
 cite span {
+    display: block;
     font-weight: 700;
     font-size: 22px;
     color: #000000;
@@ -218,23 +219,24 @@ a.view-all {
     right: 15px;
     font-size: 17px;
     line-height: 60px;
+    padding-right: 11px;
 }
 
 a.view-all::after {
     content: "";
     position: absolute;
     top: 0;
+    left: 100%;
     display: block;
-    width: 51px;
+    width: 6px;
     height: 100%;
     background-image: url(../img/arrow-right.svg);
     background-repeat: no-repeat;
-    background-position: 50%;
-    transform:translateX(100%);
+    background-position: 100% 50%;
 }
 
 a.view-all:hover::after {
-    padding-right: 5px;
+    width: 11px;
 }
 
 /*form*/
@@ -575,8 +577,7 @@ h2.h3::after{
 }
 
 .testimonials .section-container {
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column;
 }
 
 .testimonials .title-wrapper{
@@ -588,27 +589,27 @@ h2.h3::after{
     max-width: 1120px;
 }
 
-.testimonials .testimonials-slide {
+.testimonials .testimonials-slider {
     margin-top: 145px;
     width: 100%;
     
 }
 
-.testimonials .testimonials-slide li {
+.testimonials .testimonials-slider li {
     display: inline-block;
     margin-bottom: 30px;
     list-style: none;
 }
 
-.testimonials-slide img {
+.testimonials-slider img {
     border-radius: 10px;
 }
 
-.testimonials-slide button.slick-prev {
+.testimonials-slider button.slick-prev {
     right: 48px;
 }
 
-.testimonials-slide button.slick-prev::after {
+.testimonials-slider button.slick-prev::after {
     transform: rotate(180deg);
     right: 16px;
 }

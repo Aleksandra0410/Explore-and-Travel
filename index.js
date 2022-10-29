@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $('.testimonials-slide').slick();
+    $('.testimonials-slider').slick();
 });
