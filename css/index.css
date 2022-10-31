@@ -590,23 +590,57 @@ h2.h3::after{
 }
 
 .testimonials .testimonials-slider {
-    margin-top: 145px;
     width: 100%;
-    
+}
+
+.testimonials .testimonials-slider .slider-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+}
+
+.testimonials .slider-wrapper {
+    margin-top: 145px;
+    margin-right: 135px;
+    margin-left: 50px;
+}
+
+.testimonials .testimonials-slider ul.rating {
+    margin-bottom: 27px;  
 }
 
 .testimonials .testimonials-slider li {
     display: inline-block;
-    margin-bottom: 30px;
     list-style: none;
+    padding-right: 11px;
 }
 
-.testimonials-slider img {
-    border-radius: 10px;
+.testimonials-slider .slider-wrapper cite {
+    font-style: initial;
 }
+
+.testimonials-slider .slider-wrapper span {
+    margin-top: 28px;
+    margin-bottom: -12px;
+}
+
+.testimonials .slider-img img  {
+    border-radius: 13px;
+    margin-top: 60px;
+    margin-right: 152px;
+}
+ .testimonials-slider button {
+    right: 0;
+    bottom: 0;
+    padding-top: 11px;
+    padding-right: 20px;
+    background: #FFFFFF;
+ }
+
 
 .testimonials-slider button.slick-prev {
     right: 48px;
+    position: absolute;
 }
 
 .testimonials-slider button.slick-prev::after {
@@ -617,7 +651,7 @@ h2.h3::after{
 /*section trending-stories*/
 
 .trending-stories {
-    padding: 13px 0; 
+    padding: 232px 0; 
 }
 
 .trending-stories .section-container {
