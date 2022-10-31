@@ -648,6 +648,11 @@ h2.h3::after{
     right: 16px;
 }
 
+.testimonials-slider .slick-disabled {
+    opacity: 0.2;
+}
+
+
 /*section trending-stories*/
 
 .trending-stories {
