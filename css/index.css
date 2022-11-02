@@ -730,3 +730,36 @@ h2.h3::after{
     top: 607px;
     left: 850px;
 }
+
+/* footer */
+
+footer .section-container {
+    padding: 70px 0;
+    background-color: #F9F9FB;
+}
+
+footer div {
+    margin-right: 108px;
+}
+
+footer ul {
+    padding: 70px 10px;
+}
+
+footer li {
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+    list-style: none;
+    
+}
+
+footer li span {
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 60px;
+    color: #000000;
+}
