@@ -421,7 +421,7 @@ h2.h3::after{
 
 .text-wrapper {
     max-width: 436px;
-    margin-top: -19px;
+    margin-bottom: 19px;
     margin-right: 72px;
 }
 
@@ -436,7 +436,7 @@ h2.h3::after{
 .img-and-text.reverse .text-wrapper  {
     max-width: 435px;
     margin-left: 50px;
-    margin-top: -48px;
+    margin-bottom: 48px;
 }
 
 .text-wrapper .button {
@@ -736,7 +736,7 @@ h2.h3::after{
 /* footer */
 
 footer{
-    padding: 95px 0 0px;
+    padding: 46px 0 0px;
     background-color: #F9F9FB;
 }
 
@@ -747,7 +747,6 @@ footer .section-container {
 
 footer .text-wrapper {
     max-width: 340px;
-    margin-top: -51px;
     margin-right: 28px;
 }
 
@@ -761,33 +760,38 @@ footer .text-wrapper span {
 
 footer .text-wrapper p {
     font-size: 17px;
-    margin-top: 34px;
+    margin-top: 15px;
+    margin-bottom: 26px;
 }
 
 footer ul {
     margin-left: 88px;
-    margin-top: -25px;
     margin-right: 9px;
+    list-style: none;
 }
 
 footer  ul.social {
-    margin-left: 454px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+    margin-bottom: 33px;
 }
 
-footer li {
+
+
+footer li a {
     font-family: 'Mulish';
     font-weight: 300;
     font-size: 18px;
     line-height: 38px;
     color: #848484;
-    list-style: none;
     
 }
 
 footer .social li {
     display: inline-block;
-    padding-right: 31px;
-    margin-top: 127px;
+    padding-right: 35px;
 }
 
 footer li h4 {
@@ -806,7 +810,7 @@ footer ul::after {
     content: "";
     position: absolute;
     left: 59px;
-    bottom: 65px;
+    bottom: 90px;
     width: 1223px;
     height: 1px;
     background: #C4C4C4;
