@@ -630,7 +630,20 @@ h2.h3::after{
     margin-top: 60px;
     margin-right: 152px;
 }
- .testimonials-slider button {
+
+.testimonials .background-button {
+    position: absolute;
+    width: 132px;
+    height: 60px;
+    bottom: 0;
+    right: 152px;
+    font-size: 0;
+    background: #FFFFFF;
+    border-radius: 16px 0px 0px 0px;
+}
+
+
+.testimonials-slider button {
     right: 0;
     bottom: 0;
     padding-top: 11px;
@@ -638,10 +651,14 @@ h2.h3::after{
     background: #FFFFFF;
  }
 
+.testimonials-slider button.slick-next {
+    right: 152px;
+}
 
 .testimonials-slider button.slick-prev {
-    right: 48px;
     position: absolute;
+    right: 213px;
+    z-index: 1;
 }
 
 .testimonials-slider button.slick-prev::after {
@@ -651,6 +668,31 @@ h2.h3::after{
 
 .testimonials-slider .slick-disabled {
     opacity: 0.2;
+}
+
+.testimonials .circle-slide {
+    position: absolute;
+    width: 22px;
+    left: -35px;
+    top: 300px;
+}
+
+.testimonials .circle2-slide {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 194px;
+    top: 94px;
+}
+
+.testimonials .cross-slide {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 731px;
+    top: 583px;
+    transform: rotate(96deg);
+    z-index: 1;
 }
 
 
@@ -786,12 +828,19 @@ footer li a {
     font-size: 18px;
     line-height: 38px;
     color: #848484;
-    
+}
+
+footer li a:hover {
+    color: #565151;
 }
 
 footer .social li {
     display: inline-block;
     padding-right: 35px;
+}
+
+footer .social li:hover {
+    opacity: 0.8;
 }
 
 footer li h4 {
