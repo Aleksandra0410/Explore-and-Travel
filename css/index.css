@@ -354,6 +354,12 @@ nav {
     font-weight: 500;
 }
 
+.buttons button.transparent {
+    border-image: linear-gradient(to right, #037f5a, #FB8F1D );
+    border-image-slice: 1;
+    border-radius: 8px;
+}
+
 .buttons li button.active {
     background: transparent;
     color: #FB8F1D;
@@ -363,6 +369,7 @@ nav {
 
 .form-and-img {
     padding: 171px 0px 145px;
+    background: linear-gradient(#F9F9FB, transparent);
     
 }
 
@@ -476,6 +483,13 @@ h2.h3::after{
     max-width: 436px;
     margin-bottom: 19px;
     margin-right: 72px;
+    
+}
+
+.text-wrapper h2 {
+    background: linear-gradient(to right, #037f5a, #FB8F1D );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text-wrapper p {
@@ -932,3 +946,12 @@ footer ul::after {
     background: #C4C4C4;
 }
 
+
+footer .social-link {
+    color: #000000;
+}
+
+footer .social-link:hover {
+    color: #037f5a;
+    transition: 4s;
+}
