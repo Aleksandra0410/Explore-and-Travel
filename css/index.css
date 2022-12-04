@@ -139,6 +139,7 @@ button, .button, input[type=button], input[type=submit] {
     padding: 0 38px;
     min-width: 164px;
     border: 1px solid #FB8F1D;
+    transition: 3s;
 }
 
 button.slick-arrow {
@@ -177,7 +178,6 @@ button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover 
     background-color: #e6a857;
     border-color: #e6a857;
     color: #FFFFFF;
-    transition: 3s;
 }
 
 button:active, .button:active, input[type=button]:active, input[type=submit]:active {
@@ -186,14 +186,29 @@ button:active, .button:active, input[type=button]:active, input[type=submit]:act
 }
 
 button.transparent, .button.transparent, input[type=button].transparent, input[type=submit].transparent {
-    background: transparent;
+    background: white;
     color: #FB8F1D;
+    position: relative;
+    border: 0;
+}
+
+button.transparent::before, .button.transparent::before, input[type=button].transparent::before, input[type=submit].transparent::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    background: linear-gradient(to right, #015244 0%,#fb8f1d 100%);
+    border-radius: 8px;
+    z-index: -1;
+
 }
 
 button.transparent:hover, .button.transparent:hover, input[type=button].transparent:hover, input[type=submit].transparent:hover {
-    background-color:#FB8F1D ;
+    background-color: transparent ;
     color: #FFFFFF;
-    transition: 5s;
+    transition: 3s;
 }
 
 button.transparent:active, .button.transparent:active, input[type=button].transparent:active, input[type=submit].transparent:active {
@@ -210,11 +225,11 @@ a {
     line-height: 28px;
     color: #FB8F1D;
     text-decoration: none;
+    transition: 3s;
 }
 
 a:hover {
     color:#da7f1e;
-    transition: 5s;
 }
 
 a.view-all {
@@ -236,10 +251,12 @@ a.view-all::after {
     background-image: url(../img/arrow-right.svg);
     background-repeat: no-repeat;
     background-position: 100% 50%;
+    transition: 3s;
 }
 
 a.view-all:hover::after {
     width: 11px;
+    color:#da7f1e;
 }
 
 /*form*/
@@ -354,12 +371,6 @@ nav {
     font-weight: 500;
 }
 
-.buttons button.transparent {
-    border-image: linear-gradient(to right, #037f5a, #FB8F1D );
-    border-image-slice: 1;
-    border-radius: 8px;
-}
-
 .buttons li button.active {
     background: transparent;
     color: #FB8F1D;
@@ -404,21 +415,9 @@ h2.h3::after{
     left: -51px;
     top: 324px;
 
-    animation-name: circle-big-shape;
+    animation-name: shape-animation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-
-@keyframes circle-big-shape {
-    0% {
-        width: 26px;
-        height: 26px;
-    }
-
-    100% {
-        width: 29px;
-        height: 29px;
-    }
 }
 
 .form-and-img .circle-shape {
@@ -428,20 +427,22 @@ h2.h3::after{
     width: 20px;
     height: 20px;
 
-    animation-name: circle-shape;
+    animation-name: shape-animation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes circle-shape {
+@keyframes shape-animation {
     0% {
-        width: 20px;
-        height: 20px;
+       transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
     }
 
     100% {
-        width: 23px;
-        height: 23px;
+        transform: scale(1);
     }
 }
 
@@ -450,23 +451,10 @@ h2.h3::after{
     left: 527px;
     top: 50px;
 
-    animation-name: cross-shape;
+    animation-name: shape-animation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
-
-@keyframes cross-shape {
-    0% {
-        width: 20px;
-        height: 20px;
-    }
-
-    100% {
-        width: 23px;
-        height: 23px;
-    }
-}
-
 
 
 /*section img and text*/
@@ -580,7 +568,6 @@ h2.h3::after{
     margin-bottom: 1px;
     width: 100%;
     max-width: 1120px;
-   
 }
 
 .featured-destination .location-list {
@@ -596,14 +583,15 @@ h2.h3::after{
 .featured-destination .location-list img {
     width: 100%;
     border-radius:8px ;
+    transition: 2s;
+}
+
+.featured-destination .location-list img:hover {
+    box-shadow: 10px -10px 10px rgba(0,0,0,0.2);
 }
 
 .featured-destination figure {
     position: relative;
-}
-
-.featured-destination figure:hover {
-    box-shadow: 10px -10px 10px rgba(0,0,0,0.2);
 }
 
 .featured-destination figcaption {
@@ -615,6 +603,7 @@ h2.h3::after{
     min-width: 120px;
     background: #FFFFFF;
     border-radius: 0px 6px 0px 0px;
+    transition: 3s;
 }
 
 .featured-destination figcaption:hover {
@@ -725,6 +714,7 @@ h2.h3::after{
     padding-top: 11px;
     padding-right: 20px;
     background: #FFFFFF;
+    transition:3s;
  }
 
 .testimonials-slider button.slick-next {
@@ -737,6 +727,10 @@ h2.h3::after{
     z-index: 1;
 }
 
+.testimonials-slider button.slick-next:hover, .testimonials-slider button.slick-prev:hover {
+    opacity: 0.5;
+}
+
 .testimonials-slider button.slick-prev::after {
     transform: rotate(180deg);
     right: 16px;
@@ -744,11 +738,7 @@ h2.h3::after{
 
 .testimonials-slider .slick-disabled {
     opacity: 0.2;
-}
-
-.testimonials-slider button.slick-next:hover, .testimonials-slider button.slick-prev:hover, .testimonials-slider .slick-disabled:hover {
-    opacity: 0.5;
-    transition: 2s;
+    transition: none;
 }
 
 .testimonials .circle-slide {
@@ -949,9 +939,9 @@ footer ul::after {
 
 footer .social-link {
     color: #000000;
+    transition: 3s;
 }
 
 footer .social-link:hover {
-    color: #037f5a;
-    transition: 4s;
+    color: #037f5a;   
 }
