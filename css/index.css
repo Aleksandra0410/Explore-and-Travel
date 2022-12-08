@@ -583,7 +583,7 @@ h2.h3::after{
 .featured-destination .location-list img {
     width: 100%;
     border-radius:8px ;
-    transition: 2s;
+    transition: 3s;
 }
 
 .featured-destination .location-list img:hover {
@@ -606,7 +606,7 @@ h2.h3::after{
     transition: 3s;
 }
 
-.featured-destination figcaption:hover {
+.featured-destination figure:hover figcaption  {
     min-width: 125px;
     padding-left: 5px;
 }
@@ -736,9 +736,13 @@ h2.h3::after{
     right: 16px;
 }
 
-.testimonials-slider .slick-disabled {
+.testimonials-slider button.slick-disabled {
     opacity: 0.2;
     transition: none;
+}
+
+.testimonials-slider button.slick-disabled:hover {
+    opacity: 0.2;
 }
 
 .testimonials .circle-slide {
